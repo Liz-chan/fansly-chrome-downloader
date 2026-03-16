@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Fansly Image Collector",
+  "version": "1.2",
+  "description": "Media downloader for Fansly.",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "*://*.fansly.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.fansly.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["client-zip.js"],
+      "matches": ["*://*.fansly.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Fansly Image Collector"
+  }
+}
