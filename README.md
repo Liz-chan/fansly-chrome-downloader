@@ -13,6 +13,10 @@ Instead of manually saving media one by one, this extension logs the network req
 * **Memory-Safe Zipping:** Uses `client-zip` and the File System Access API to stream large ZIP files directly to your hard drive, preventing browser memory crashes when downloading massive videos.
 * **Interactive Popup:** Gives you granular control to download "Images Only," "Videos Only," or "All Media," as well as toggles for monitoring and size restrictions.
 
+## Preview
+
+<img width="252" height="293" alt="image" src="https://github.com/user-attachments/assets/a5232db1-1463-4aa6-8cdc-f1af5d8dc78e" />
+
 ## Installation
 
 Since this extension is not listed on the Chrome Web Store, you will need to install it manually via Chrome's Developer Mode.
